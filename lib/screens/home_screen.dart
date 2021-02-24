@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:underclocking/screens/cpu_screen.dart';
 import 'package:underclocking/screens/gpu_screen.dart';
+import 'package:underclocking/screens/motherboard_screen.dart';
 import 'package:underclocking/screens/ram_screen.dart';
 import 'package:underclocking/widgets/fluo_button/fluo_button.dart';
 import 'package:underclocking/widgets/home_header/home_header.dart';
@@ -15,6 +16,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey.withOpacity(0.15),
       extendBodyBehindAppBar: true,
       appBar: TransparentAppBar(title: 'UnderClocking'),
       body: Column(
@@ -85,6 +87,16 @@ class HomeScreen extends StatelessWidget {
                             child: TextItem('RAM'),
                             image:
                                 'https://images.unsplash.com/photo-1562976540-1502c2145186?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80',
+                          ),
+                        ),
+                        Hero(
+                          tag: 'motherboard',
+                          child: FluoButton(
+                            onTap: () => Navigator.of(context)
+                                .pushNamed(MotherboardScreen.routeName),
+                            child: TextItem('Motherboard'),
+                            image:
+                                'https://images.pexels.com/photos/3520694/pexels-photo-3520694.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
                           ),
                         ),
                       ],
