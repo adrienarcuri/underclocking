@@ -28,7 +28,7 @@ class FluoButton extends StatelessWidget {
           color: backgroundColor,
           image: image != null
               ? DecorationImage(
-                  image: NetworkImage(image),
+                  image: AssetImage(image),
                   fit: BoxFit.cover,
                 )
               : null,

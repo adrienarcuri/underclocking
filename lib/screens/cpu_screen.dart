@@ -21,8 +21,7 @@ class CpuScreen extends StatelessWidget {
               width: double.infinity,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: NetworkImage(
-                      'https://images.pexels.com/photos/40879/cpu-processor-macro-pen-40879.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'),
+                  image: AssetImage('assets/images/cpu.jpeg'),
                   fit: BoxFit.cover,
                   colorFilter: ColorFilter.mode(
                       Colors.black.withOpacity(0.4), BlendMode.dstOut),

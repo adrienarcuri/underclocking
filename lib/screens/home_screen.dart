@@ -65,8 +65,7 @@ class HomeScreen extends StatelessWidget {
                             onTap: () => Navigator.of(context)
                                 .pushNamed(CpuScreen.routeName),
                             child: TextItem('CPU'),
-                            image:
-                                'https://images.pexels.com/photos/40879/cpu-processor-macro-pen-40879.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+                            image: 'assets/images/cpu.jpeg',
                           ),
                         ),
                         Hero(
@@ -75,8 +74,7 @@ class HomeScreen extends StatelessWidget {
                             onTap: () => Navigator.of(context)
                                 .pushNamed(GpuScreen.routeName),
                             child: TextItem('GPU'),
-                            image:
-                                'https://images.pexels.com/photos/4581902/pexels-photo-4581902.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+                            image: 'assets/images/gpu.jpeg',
                           ),
                         ),
                         Hero(
@@ -85,8 +83,7 @@ class HomeScreen extends StatelessWidget {
                             onTap: () => Navigator.of(context)
                                 .pushNamed(RamScreen.routeName),
                             child: TextItem('RAM'),
-                            image:
-                                'https://images.unsplash.com/photo-1562976540-1502c2145186?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80',
+                            image: 'assets/images/ram.jpeg',
                           ),
                         ),
                         Hero(
@@ -95,8 +92,7 @@ class HomeScreen extends StatelessWidget {
                             onTap: () => Navigator.of(context)
                                 .pushNamed(MotherboardScreen.routeName),
                             child: TextItem('Motherboard'),
-                            image:
-                                'https://images.pexels.com/photos/3520694/pexels-photo-3520694.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+                            image: 'assets/images/motherboard.jpeg',
                           ),
                         ),
                       ],

@@ -21,8 +21,7 @@ class MotherboardScreen extends StatelessWidget {
               width: double.infinity,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: NetworkImage(
-                      'https://images.pexels.com/photos/3520694/pexels-photo-3520694.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'),
+                  image: AssetImage('assets/images/motherboard.jpeg'),
                   fit: BoxFit.cover,
                   colorFilter: ColorFilter.mode(
                       Colors.black.withOpacity(0.4), BlendMode.dstOut),

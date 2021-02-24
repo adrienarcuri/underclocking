@@ -21,8 +21,7 @@ class GpuScreen extends StatelessWidget {
               width: double.infinity,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: NetworkImage(
-                      'https://images.pexels.com/photos/4581902/pexels-photo-4581902.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'),
+                  image: AssetImage('assets/images/gpu.jpeg'),
                   fit: BoxFit.cover,
                   colorFilter: ColorFilter.mode(
                       Colors.black.withOpacity(0.4), BlendMode.dstOut),

@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:underclocking/screens/cpu_screen.dart';
-import 'package:underclocking/screens/gpu_screen.dart';
+import 'package:underclocking/routes.dart';
 import 'package:underclocking/screens/home_screen.dart';
-import 'package:underclocking/screens/motherboard_screen.dart';
-import 'package:underclocking/screens/ram_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -28,13 +25,7 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.red,
           brightness: Brightness.dark),
       home: HomeScreen(),
-      routes: {
-        HomeScreen.routeName: (context) => HomeScreen(),
-        CpuScreen.routeName: (context) => CpuScreen(),
-        GpuScreen.routeName: (context) => GpuScreen(),
-        RamScreen.routeName: (context) => RamScreen(),
-        MotherboardScreen.routeName: (context) => MotherboardScreen(),
-      },
+      routes: routes(),
     );
   }
 }

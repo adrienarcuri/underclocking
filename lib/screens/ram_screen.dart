@@ -21,8 +21,7 @@ class RamScreen extends StatelessWidget {
               width: double.infinity,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: NetworkImage(
-                      'https://images.unsplash.com/photo-1562976540-1502c2145186?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80'),
+                  image: AssetImage('assets/images/ram.jpeg'),
                   fit: BoxFit.cover,
                   colorFilter: ColorFilter.mode(
                       Colors.black.withOpacity(0.4), BlendMode.dstOut),
