@@ -3,6 +3,7 @@ import 'package:underclocking/screens/cpu_screen.dart';
 import 'package:underclocking/screens/gpu_screen.dart';
 import 'package:underclocking/screens/home_screen.dart';
 import 'package:underclocking/screens/motherboard_screen.dart';
+import 'package:underclocking/screens/pc_screen.dart';
 import 'package:underclocking/screens/ram_screen.dart';
 
 Map<String, WidgetBuilder> routes() {
@@ -12,5 +13,6 @@ Map<String, WidgetBuilder> routes() {
     GpuScreen.routeName: (context) => GpuScreen(),
     RamScreen.routeName: (context) => RamScreen(),
     MotherboardScreen.routeName: (context) => MotherboardScreen(),
+    PcScreen.routeName: (context) => PcScreen(),
   };
 }

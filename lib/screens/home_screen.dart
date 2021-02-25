@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:underclocking/screens/cpu_screen.dart';
 import 'package:underclocking/screens/gpu_screen.dart';
 import 'package:underclocking/screens/motherboard_screen.dart';
+import 'package:underclocking/screens/pc_screen.dart';
 import 'package:underclocking/screens/ram_screen.dart';
 import 'package:underclocking/widgets/fluo_button/fluo_button.dart';
 import 'package:underclocking/widgets/home_header/home_header.dart';
@@ -59,6 +60,15 @@ class HomeScreen extends StatelessWidget {
                       shrinkWrap: true,
                       crossAxisCount: 2,
                       children: [
+                        Hero(
+                          tag: 'pc',
+                          child: FluoButton(
+                            onTap: () => Navigator.of(context)
+                                .pushNamed(PcScreen.routeName),
+                            child: TextItem('PC'),
+                            image: 'assets/images/pc.jpeg',
+                          ),
+                        ),
                         Hero(
                           tag: 'cpu',
                           child: FluoButton(
