@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:underclocking/screens/user_profil_screen.dart';
 
 class TransparentAppBar extends StatefulWidget implements PreferredSizeWidget {
   final String title;
@@ -24,10 +25,22 @@ class _TransparentAppBarState extends State<TransparentAppBar> {
         widget.title,
         textAlign: TextAlign.center,
         style: TextStyle(
-            fontSize: 30.0,
-            fontWeight: FontWeight.bold,
-            backgroundColor: Colors.black.withOpacity(0.9)),
+          fontSize: 30.0,
+          fontWeight: FontWeight.bold,
+          backgroundColor: Colors.black.withOpacity(0.9),
+        ),
       ),
+      actions: [
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: CircleAvatar(
+              child: IconButton(
+                  icon: Icon(Icons.person),
+                  onPressed: () {
+                    Navigator.of(context).pushNamed(UserProfilScreen.routeName);
+                  })),
+        )
+      ],
     );
   }
 }

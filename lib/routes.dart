@@ -5,6 +5,7 @@ import 'package:underclocking/screens/home_screen.dart';
 import 'package:underclocking/screens/motherboard_screen.dart';
 import 'package:underclocking/screens/pc_screen.dart';
 import 'package:underclocking/screens/ram_screen.dart';
+import 'package:underclocking/screens/user_profil_screen.dart';
 
 Map<String, WidgetBuilder> routes() {
   return {
@@ -14,5 +15,6 @@ Map<String, WidgetBuilder> routes() {
     RamScreen.routeName: (context) => RamScreen(),
     MotherboardScreen.routeName: (context) => MotherboardScreen(),
     PcScreen.routeName: (context) => PcScreen(),
+    UserProfilScreen.routeName: (context) => UserProfilScreen(),
   };
 }
