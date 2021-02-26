@@ -29,6 +29,13 @@ class PcScreen extends StatelessWidget {
               ),
             ),
           ),
+          Column(
+            children: [
+              ListTile(
+                title: Text('config de UserA'),
+              )
+            ],
+          )
         ],
       ),
     );

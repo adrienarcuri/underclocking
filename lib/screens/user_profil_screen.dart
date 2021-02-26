@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:underclocking/widgets/transparent_appbar/transparent_appbar.dart';
 
 class UserProfilScreen extends StatelessWidget {
   static const routeName = '/userProfil';

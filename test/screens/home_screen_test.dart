@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:underclocking/main.dart';
 import 'package:underclocking/routes.dart';
 import 'package:underclocking/screens/cpu_screen.dart';
 import 'package:underclocking/screens/gpu_screen.dart';

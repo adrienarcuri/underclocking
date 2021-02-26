@@ -2,11 +2,11 @@ import 'package:flutter/foundation.dart';
 
 /// A User is defined by its email, password, pseudo, description and avatar
 class User {
-  String email;
-  String password;
-  String pseudo;
-  String description;
-  String avatar;
+  final String email;
+  final String password;
+  final String pseudo;
+  final String description;
+  final String avatar;
 
   /// Create a User
   User({
